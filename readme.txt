@@ -31,3 +31,5 @@ image whereas the back contains certification details and an external link to th
 
 Section 6. Skills
 Responsive horizontal bars along each skill that grow on refreshing the page.  
+
+This site is hosted at https://sayalideo.github.io/MyWebpage/
