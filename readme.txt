@@ -1,11 +1,11 @@
 File Structure -
-main folder    : Personal Webpage
+main folder        : Personal Webpage
 	sub folder : fontawesome-free-5.15 - It contains varous font styles used in css file.
-	sub folder : images				   - This folder contains all the images used on this page.
-	file       : index.html			   - The main HTML code file containing the body of the webpage.
-	file       : mystyle.css		   - The CSS file containing styles, fonts, colors, etc.
-	file       : myscript.js		   - The Javascript file containing animation of the HTML elements. 
-	file       : readme.txt			   - Text fle containing description of this assignment.
+	sub folder : images		   - This folder contains all the images used on this page.
+	file       : index.html		   - The main HTML code file containing the body of the webpage.
+	file       : mystyle.css	   - The CSS file containing styles, fonts, colors, etc.
+	file       : myscript.js	   - The Javascript file containing animation of the HTML elements. 
+	file       : readme.txt		   - Text fle containing description of this assignment.
 
 Description - 
 The entire webpage is divided into 6 sections which are mentioned as follows :
