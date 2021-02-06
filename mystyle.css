@@ -76,7 +76,7 @@ section.tabs
 	right: 0;
 	width: 100%;
 	height: 100%;
-	background: #FC427B;
+	background: #fa618d;
 	animation: c 1s infinite;
 }
 
@@ -311,7 +311,7 @@ h1 span{
 }
 
 #progress-bar-container li.active:after {
-	background:#fa1474;
+	background:#fa618d;
 }
 
 #progress-bar-container #line {
@@ -331,7 +331,7 @@ h1 span{
 	content:" ";
 	width:10%;
 	height:100%;
-	background: #fa1474;	/* Tis the pink u lookin for */ 
+	background: #fa618d;	/* Tis the pink u lookin for */ 
 	background: linear-gradient(to right, #fa1474 0%,#2ea3b7 100%); 
 	position:absolute;
 	z-index:2;
@@ -472,7 +472,7 @@ h1 span{
 }
 
 .pricing-card-header{
-	background-color: #f53d8a;
+	background-color: #fa618d;
 	display: inline-block;
 	color: #fff;
 	padding: 12px 30px;
@@ -484,7 +484,7 @@ h1 span{
 }
 
 .pricing-card:hover .pricing-card-header{
-	box-shadow: 0 0 0 20em #f53d8a;
+	box-shadow: 0 0 0 20em #fa618d;
 }
 
 .pricing-card:hover, .pricing-card:hover .price{
@@ -495,8 +495,8 @@ h1 span{
 	display: inline-block;
 	margin-bottom: 40px;
 	margin-top: 80px;
-	border: 2px solid #f53d8a;
-	color: #f53d8a;
+	border: 2px solid #fa618d;
+	color: #fa618d;
 	padding: 18px 40px;
 	border-radius: 8px;
 	text-transform: uppercase;
@@ -506,7 +506,7 @@ h1 span{
 }
 
 .view-btn:hover{
-	background-color: #f53d8a;
+	background-color: #fa618d;
 	color: #fff;
 	text-decoration: none;
 }
@@ -518,7 +518,7 @@ h1 span{
 }
 
 #proj{
-	color: #f53d8a;
+	color: #fa618d;
 	font-weight: 700;
 	margin-top: 100px;
 	text-align: center;
@@ -531,7 +531,7 @@ h1 span{
 
 .cert{
 	padding-bottom: 100px;
-	background-color: #f53d8a;
+	background-color: #fa618d;
 }
 
 #certi{
@@ -636,7 +636,7 @@ h1 span{
 .bar span{
 	height: 7px;
 	float: left;
-	background: #fa2a93;
+	background: #fa618d;
 }
 
 .html{
