@@ -26,9 +26,19 @@
 			<span class="c4 c"></span>
 			<span class="c5 c"></span>
 		</div>
-		<div class="strips">
-			<br><br>
-			<div class="box">
+		
+
+		<section class="tabs">
+			<div class="strips">
+				<br><br><br><br><br>
+				<div class="sidebar">
+					<a href="#" class="active">Home</a>
+					<a href="#aim" >Objective</a>
+					<a href="#edu" >Education</a>
+					<a href="#project" >Projects</a>
+					<a href="#cert" >Certifications</a>
+				</div>
+			<div class="box" id="box">
 				<img src="./images/profile.png" alt="" class="box-img">
 				<h1>SAYALI DEO</h1><br>
 				<h5>M.Tech Computer Science-Information Security <br>National Institute of Technology Karnataka, Surathkal</h5><br>
@@ -41,15 +51,17 @@
 			</div>
 			<br><br><br>
 		</div>
-	
+		<div id="aim">
 			<blockquote class="blockquote blockquote--bordered blockquote--quoted">
 				<p class="blockquote__text">
 					I believe that continuous learning should be life's greatest pursuit. Also, it is necessary to unlearn those values that do not stand the test of time. Trying to pick up good aspects in every individual I meet. Also, whatever knowledge and skills an individual might possess, it is important to use them in the betterment of society. 
 				</p><br>
 				<p class="blockquote__text--credit"><i>My Thoughts</i></p>
 			</blockquote>
+
+		</div>
 			<br><br>	
-		<section class="timeline">
+		<section class="timeline" id="edu">
 			<br>
 			<h1 class="edu">MY <span>EDUCATION</span></h1>
 			<br>
@@ -151,7 +163,7 @@
 				<br>
 			</div>
 		</section>
-		<section class="project">
+		<section class="project" id="project">
 			<br>
 			<h1 id="proj">MY <span>Projects</span></h1>
 			<br>
@@ -186,7 +198,7 @@
 				</div>
 			</div>			
 		</section>
-		<section class="cert">
+		<section class="cert" id="cert">
 			<br>
 			<h1 id="certi">MY <span>certifications</span></h1>
 			<br>
@@ -267,21 +279,23 @@
 				</li>
 			</div>
 		</section>
+		</section>	
+		
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script src="myscript.js"></script> 
 <script type="text/javascript">
-	$('skill-per').each(function()){
-	var $this = $(this);
-	var per = $this.attr('per');
-	$this.css("width",per+'%');
-	$({animatedValue:0}).animate({animatedValue:per},{
-		duration: 1000,
-		step: function(){
-			$this.attr('per', Math.floor(this.animatedValue));
+
+
+const allitems = document.querySelectorAll('.navmenu ul li a');
+allitems.forEach(item => {
+	item.addEventListener('click',function(e){
+		for(var i=0; i < allitems.length; i++){
+			allitems[i].classList.remove("active");
 		}
+		this.classList.add("active");
 	})
-}
+})
 </script>
-	</body>
+</body>
 </html>
