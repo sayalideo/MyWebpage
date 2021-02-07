@@ -1,4 +1,5 @@
 *{
+	--header-height: 50px;
 	margin: 0;
 	padding: 0;
 	outline: 0;
@@ -9,41 +10,87 @@
 	scroll-behavior: smooth; 
 }
 
-.sidebar{
-	position: fixed;
-	width: 200px;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	background: #161616;
-	padding-top: 20px;
-	font-weight: 500;
-	font-size: 20px;
-	line-height: 70px;
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #333;
+	display: flex;
+	z-index: 5;
 }
 
-.sidebar a{
-	display: block;
-	padding: 10px 20px;
-	color: #bbb;
-	text-decoration: none;
-	font-family: 'Century Gothic', sans-serif; 
-	letter-spacing: 2px; 
-
-}
-
-.sidebar a:hover{
-	margin-left: 20px;
-	transition: 0.4s;
+.header__button{
+	width: 50px;
+	flex-shrink: 0;
+	background: none;
+	outline: none;
+	border: none;
 	color: #fff;
+	cursor: pointer;
 }
-section.tabs
-{
-    position: relative;
-    display: block;
-    /* height: 500px; */
-	margin-left: 200px; 
 
+.nav__links{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	height: 200vh;
+	width: 250px;
+	background: #333;
+	transform: translateX(-250px);
+	transition: transform 0.3s;
+}
+
+.nav--open .nav__links{
+	transform: translateX(0);
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.nav__link{
+	display: flex;
+	align-items: center;
+	color: #eee;
+	font-weight: bold;
+	font-size: 20px;
+	text-decoration: none;
+	line-height: 50px;
+	padding: 12px 15px;
+	background: transform 0.2s;
+}
+
+.nav__link > i{
+	margin-right: 15px;
+}
+
+.nav__link--active{
+	color: #eee;
+	background: #333;
+}
+
+.nav__link--active,
+.nav__link:hover{
+	background: #333;
+	margin-left: 30px;
+	transition: 0.4s;
+}
+
+.nav__overlay{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(2px);
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+.nav--open .nav__overlay{
+	visibility: visible;
+	opacity: 1;
 }
 .strips{
 	position: relative;
@@ -109,7 +156,7 @@ section.tabs
 	padding: 40px;
 	text-align: center;
 	margin: auto;
-	margin-top: 5%;
+	margin-top: 9%;
 	color: white;
 	font-family: 'Century Gothic', sans-serif;  
 }
@@ -240,7 +287,7 @@ h1 span{
 	padding:0;
 	margin:0;
 	padding-top:15px;
-	z-index:9999;
+	z-index:2;
 	position:absolute;
 	width:100%;
 	margin-top:-40px
@@ -334,7 +381,7 @@ h1 span{
 	background: #fa618d;	/* Tis the pink u lookin for */ 
 	background: linear-gradient(to right, #fa1474 0%,#2ea3b7 100%); 
 	position:absolute;
-	z-index:2;
+	z-index:1;
 	border-radius:50px;
 	transition:all ease 0.9s;
 }
@@ -494,7 +541,7 @@ h1 span{
 .view-btn{
 	display: inline-block;
 	margin-bottom: 40px;
-	margin-top: 80px;
+	margin-top: 90px;
 	border: 2px solid #fa618d;
 	color: #fa618d;
 	padding: 18px 40px;
