@@ -93,9 +93,13 @@
 	opacity: 1;
 }
 .strips{
+	max-width:100%;
+	height:auto;
 	position: relative;
 	top: -82px;
-	background: url(./images/bg.svg) no-repeat;
+	background: url(./images/bg.jpg);
+	background-repeat: no-repeat;
+  	background-size: 100% 100%;
 
 	/*background: #FC427B;*/
 }
