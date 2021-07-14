@@ -938,35 +938,35 @@ h1 span{
 }
 
 .con{
-	padding-bottom: 100px;
+	padding-bottom: 0px;
 	background-color: #2b272a;
 }
 
 .cont{
 	position: relative;
 	width: 900px; 
-	padding: 20px;
+	padding: 0px;
 	box-sizing: border-box;
 	color: #fff;
 	border-radius: 4px;
 	display: flex;
 	transition: .5s;
-	margin-left: 400px;
+	margin-left: 0px;
 }
 
 .contact-info{
 	display: flex;
 	width: 100%;
-	max-width: 1200px;
+	max-width: 1550px;
 	align-items: center;
 	justify-content: center;
-	padding: 20px 20px;
+	padding: 0px;
 }
 
 .cardc{
 	background: #2b272a;
-	padding: 0 120px;
-	margin: 0 10px;
+	padding: 0 50px;
+	margin: 0 0px;
 	width: calc(33% - 20px);
 	height: 200px;
 	display: flex;
@@ -980,7 +980,7 @@ h1 span{
 .card-icon
 {
 	font-size: 28px;
-	background: #ff005c;
+	background: #fa618d;
 	width: 60px;
 	height: 60px;
 	text-align: center;
@@ -992,12 +992,12 @@ h1 span{
 .cardc:hover .card-icon
 {
 	background: none;
-	color: #ff005c;
+	color: #fa618d;
 	transform: scale(1.6);
 }
 
 .cardc p{
-	margin-top: 20px;
+	margin-top: 10px;
 	font-weight: 300;
 	letter-spacing: 2px;
 	max-height: 0;
@@ -1026,7 +1026,7 @@ h1 span{
 	}
 	.cardc{
 		width: 100%;
-		max-width: 300px;
+		max-width: 250px;
 		margin: 10px 0;
 	}
 }
