@@ -210,6 +210,48 @@ ul{
 	color: #b9b9b9;
 }
 
+.res {
+	display: inline-block;
+	border-radius: 5px;
+	background-color: #fff;
+	border: none;
+	color: #000;
+	text-align: center;
+	font-size: 16px;
+	padding: 8px;
+	width: 175px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 3px;
+	font-family: 'Jura', sans-serif;
+	text-decoration: none;
+  }
+  
+  .res span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+  }
+  
+  .res span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+  }
+  
+  .res:hover span {
+	padding-right: 25px;
+  }
+  
+  .res:hover span:after {
+	opacity: 1;
+	right: 0;
+  }
+
 .blockquote{
 	/*max-width: 600px;*/
 
@@ -274,6 +316,16 @@ ul{
 h1 span{
 	color: white;
 }
+
+
+.edu span{
+	color: #fff;
+}
+
+.edu h1{
+	color: #fff;
+}
+
 .process-wrapper {
 	margin:auto;
 	max-width:1080px;
@@ -339,7 +391,7 @@ h1 span{
 }
 
 #progress-bar-container li.active, #progress-bar-container li:hover {
-	color:#737072;
+	color:#fff;
 }
 
 #progress-bar-container li:after {
@@ -700,18 +752,28 @@ h1 span{
 	animation: css 2s;
 }
 
-.python{
+.linux{
+	width: 75%;
+	animation: css 2s;
+}
+
+.git{
 	width: 80%;
+	animation: css 2s;
+}
+
+.python{
+	width: 85%;
 	animation: python 2s;
 }
 
 .cpp{
-	width: 65%;
+	width: 85%;
 	animation: cpp 2s;
 }
 
 .sql{
-	width: 68%;
+	width: 75%;
 	animation: sql 2s;
 }
 
@@ -757,5 +819,214 @@ h1 span{
 	}
 	100%{
 		width: 70%;
+	}
+}
+
+.extra{
+	padding-bottom: 100px;
+	background-color: #adaaad;
+}
+
+.ex{
+	color: #b81657;
+	font-weight: 700;
+	margin-top: 100px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	line-height: 23px;
+	font-family: 'Jura', sans-serif;
+	font-size: 30px;
+}
+
+
+.extras
+{
+	position: relative;
+	width: 900px; 
+	padding: 20px;
+	box-sizing: border-box;
+	background: #fff;
+	border-radius: 4px;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+	display: flex;
+	transition: .5s;
+	margin-left: 400px;
+}
+
+.extras:hover
+{
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5));
+}
+
+.extras .imgBx
+{
+	width: 150px;
+	flex: 0 0 150px;
+}
+
+.extras .imgbox .img
+{
+	max-width: 100%;
+}
+
+.extras .extraCon
+{
+	padding-left: 150px;
+	padding-right: 50px;
+	text-align: center;
+}
+
+.extras .extraCon h2
+{
+	margin : 0;
+	padding-left: 0;
+	color: #ff005c;
+	font-size: 22px;
+	text-align: center;
+	font-family: 'Merriweather', serif;
+}
+
+.extras .extraCon li
+{
+	margin : 0;
+	color: #000;
+	text-align: center;
+	font-family: 'Jura', serif;
+}
+
+.hobb{
+	padding-bottom: 100px;
+	background-color: #fa618d;
+}
+
+.hob {
+	color : #b81657;
+	font-weight: 700;
+	margin-top: 100px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	line-height: 23px;
+	font-family: 'Jura', sans-serif;
+	font-size: 30px;
+}
+
+.hob .span{
+	color : #fff;
+}
+
+.hobby
+{
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px; 
+	margin-left: 200px;
+	display: block;
+	grid-template-columns: repeat(auto-fill,minmax(300px, 300px));
+	column-gap: 100px;
+	row-gap: 10px;
+}
+
+.hobby img
+{
+	width: 350px;
+	height: 500px;
+	object-position: center;
+
+}
+
+.con{
+	padding-bottom: 100px;
+	background-color: #2b272a;
+}
+
+.cont{
+	position: relative;
+	width: 900px; 
+	padding: 20px;
+	box-sizing: border-box;
+	color: #fff;
+	border-radius: 4px;
+	display: flex;
+	transition: .5s;
+	margin-left: 400px;
+}
+
+.contact-info{
+	display: flex;
+	width: 100%;
+	max-width: 1200px;
+	align-items: center;
+	justify-content: center;
+	padding: 20px 20px;
+}
+
+.cardc{
+	background: #2b272a;
+	padding: 0 120px;
+	margin: 0 10px;
+	width: calc(33% - 20px);
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	cursor: pointer;
+}
+
+.card-icon
+{
+	font-size: 28px;
+	background: #ff005c;
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	line-height: 60px !important;
+	border-radius:50%;
+	transition: 0.3s linear;
+}
+
+.cardc:hover .card-icon
+{
+	background: none;
+	color: #ff005c;
+	transform: scale(1.6);
+}
+
+.cardc p{
+	margin-top: 20px;
+	font-weight: 300;
+	letter-spacing: 2px;
+	max-height: 0;
+	opacity: 0;
+	transition: 0.3s linear;
+	text-decoration: none;
+	color: #fff;
+	font-family: 'Merriweather', serif;
+	font-size: 17px;
+}
+
+.cardc:hover p{
+	max-height: 40px;
+	opacity: 1;
+}
+
+.cardc a
+{
+	text-decoration: none;
+	color: #fff;
+}
+
+@media screen and (max-width:800px) {
+	.contact-info{
+		flex-direction: column;
+	}
+	.cardc{
+		width: 100%;
+		max-width: 300px;
+		margin: 10px 0;
 	}
 }
