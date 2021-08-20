@@ -851,12 +851,12 @@ h1 span{
 	box-shadow: 0 5px 15px rgba(0,0,0,0.5);
 	display: flex;
 	transition: .5s;
-	margin-left: 400px;
+	margin: auto;
 }
 
 .extras:hover
 {
-	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5));
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
 }
 
 .extras .imgBx
@@ -922,7 +922,8 @@ h1 span{
 	justify-content: center;
 	align-items: center;
 	margin-top: 10px; 
-	margin-left: 200px;
+	margin-left: 300px;
+	margin-right: 300px;
 	display: block;
 	grid-template-columns: repeat(auto-fill,minmax(300px, 300px));
 	column-gap: 100px;
@@ -936,6 +937,37 @@ h1 span{
 	object-position: center;
 
 }
+
+.art{
+	margin: 50px;
+}
+.art .column {
+	float: left;
+	width: 25%;
+	padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .art .row::after {
+	content: "";
+	clear: both;
+	display: table;
+  }
+
+  .art .row {
+	display: flex;
+  }
+  
+  .art .column {
+	flex: 25%;
+	padding: 10px;
+  }
+
+  @media screen and (max-width: 500px) {
+	.art .column {
+	  width: 100%;
+	}
+  }
 
 .con{
 	padding-bottom: 0px;
